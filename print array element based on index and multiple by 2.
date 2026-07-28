@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Array3{
+    public static void main (String[] args) {
+       Scanner hp=new Scanner(System.in);
+		int n=hp.nextInt();
+	 int count=0;
+		int arr[]={7,9,17,6,45,45};
+		count=arr.length;
+		for(int i=0;i<count;i++){
+		    if(n<0){
+		        n=n*-1;
+		        System.out.println("n values is:"+n);
+		    }
+		    if(arr[n]==arr[i]){
+		        int values=arr[i]*2;
+		        System.out.println(values);
+		    }
+		    }
+    }
+}
