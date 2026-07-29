@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner hp=new Scanner(System.in);
+	int n= hp.nextInt();
+	int p=(int)Math.sqrt(n);
+	int h=(int)Math.cbrt(n);
+	int m=p*p;
+	int num=h*h*h;
+	if(m==n){
+	    System.out.println("this is perfect square"+n);
+	
+	}else if(num==n){
+	    System.out.println("this is perfect cube:"+n);
+	
+	} else if(n!=num&&n!=m){
+	    System.out.print("number is neither perfect square and nor cube");
+	}else{
+	    System.out.print("both are perfect sqaure and cube");
+	}
+	
+}
+    
+}
