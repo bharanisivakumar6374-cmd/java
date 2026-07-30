@@ -12,18 +12,26 @@ public class Main
 	for(int i=0;i<n;i++){
 	    arr2[i]=hp.nextInt();
 	}
-	for(int i=0;i<n;i++){
-	    if(arr1[i]!=arr2[i])
-	    {
-	        System.out.println("both not are equal");
-	        break;
-	    }
-	}
-	// this condition also print same answer based on inputs
+String ans=Arrays.equals(arr1,arr2)?"same":"not same";
+	System.out.print(ans);
+// this condition also print same answer based on inputs
+//	for(int i=0;i<n;i++){
+	    //if(arr1[i]!=arr2[i])
+	   // {
+	      //  System.out.println("both not are equal");
+	       // break;
+	    //}
+//	}
+	
 //	if(arr1==arr2){
 	  //  System.out.print("both array is equal");
 //	}else{
 	//   System.out.print(" both are not equal");
 //	}
+	}
+}
+	
+	
+
 	}
 }
