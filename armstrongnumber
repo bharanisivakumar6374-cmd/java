@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main
+{
+    public static boolean armstrong(int n){
+        int count=(int)Math.log10(n)+1;
+        int sum=0;
+        while(n!=0){
+            int x=n/10;
+            sum+=Math.pow(x,count);
+            n=n/10;
+        }
+        if(sum==n){
+            return true;
+        }else{
+            return false;
+        }
+    }
+	public static void main(String[] args) {
+	    Scanner hp=new Scanner(System.in);
+		int n=hp.nextInt();
+		System.out.print(armstrong(n));
+	}
+}
