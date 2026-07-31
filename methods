@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main
+{
+    public static Integer greet(int num,int n2)
+    {
+        
+    return(num*n2);
+    int arr[]=int[n2]
+    }
+    
+	public static void main(String[] args) {
+	    Scanner hp=new Scanner(System.in);
+	    int num=hp.nextInt();
+	    int n2=hp.nextInt();
+	    int arr[]=new int[n2];
+		System.out.print(greet(num,n2));
+	}
+}
