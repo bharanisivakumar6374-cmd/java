@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args) {
+		Scanner hp=new Scanner(System.in);
+		int n=hp.nextInt();
+		int sum=0;
+		int arr[][]=new int[n][n];
+		for(int i=0;i<arr.length;i++){
+		     sum=0;
+		    for(int j=0;j<arr.length;j++){
+		        arr[j][i]=hp.nextInt();
+		        sum=sum+arr[j][i];
+		    }
+		    System.out.println("sum is:"+sum);
+		    
+		}   
+         int duplicate=0;
+			if(sum>duplicate){
+		    duplicate=sum;
+		    
+		    
+		}
+         System.out.print("maximum values:"+duplicate);
+
+		
+	
+	
+	}
+}
