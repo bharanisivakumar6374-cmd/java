@@ -1,0 +1,30 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner hp=new Scanner(System.in);
+	int n=hp.nextInt();
+	int arr[][]=new int[n][n];
+	for(int i=0;i<n;i++){
+	    for(int j=0;j<n;j++){
+	        arr[i][j]=hp.nextInt();
+	    }
+	}
+	int a2[][]=new int[n][n];
+	for(int i=0;i<n;i++){
+	    for(int j=0;j<n;j++){
+	        a2[i][j]=hp.nextInt();
+	    }
+	}
+	int a3[][]=new int[n][n];
+	for(int i=0;i<n;i++){
+	    for(int j=0;j<n;j++){
+	        a3[i][j]=arr[i][j]+a2[i][j];
+	        System.out.print(a3[i][j]+" ");
+	    }
+	    System.out.println(" ");
+	    
+	}
+	    
+	}
+}
