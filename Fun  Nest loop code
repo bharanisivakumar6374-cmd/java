@@ -1,0 +1,31 @@
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("😂 Programmer's Daily Routine");
+
+        for (int hour = 1; hour <= 8; hour++) {
+
+            System.out.println("\nHour " + hour);
+
+            if (hour == 1) {
+                System.out.println("☕ Drink Coffee");
+            } else if (hour == 2) {
+                System.out.println("💻 Start Coding");
+            } else if (hour == 3) {
+                System.out.println("🐞 Found a Bug");
+            } else if (hour == 4) {
+                System.out.println("🔍 Searching Stack Overflow");
+            } else if (hour == 5) {
+                System.out.println("😵 Still Debugging");
+            } else if (hour == 6) {
+                System.out.println("🎉 Bug Fixed");
+            } else if (hour == 7) {
+                System.out.println("😅 New Bug Appeared");
+            } else {
+                System.out.println("😴 Go to Sleep");
+            }
+        }
+
+        System.out.println("\nRepeat Tomorrow! 😂");
+    }
+}
