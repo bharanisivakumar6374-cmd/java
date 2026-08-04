@@ -1,0 +1,32 @@
+import java.util.*;
+ class Student{
+        String name;
+        int  age;
+        String DateOfBrith;
+        String gender;
+        String course;
+        
+    
+    public void Display(){
+        System.out.println("your name is:"+name);
+        System.out.println("age is:"+age);
+        System.out.println("Date Of Brith:"+DateOfBrith);
+        System.out.println("gender"+gender);
+        System.out.println("course is:"+course);
+        
+    }
+ }
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner hp= new Scanner(System.in);
+		Student tbx=new Student();
+		tbx.name="trillionbytex";
+		tbx.age=1;
+		tbx.DateOfBrith="07/JULY/2026";
+		tbx.gender="female";
+		tbx.course="ethicalhacking";
+		tbx.Display();
+		
+	}
+}
