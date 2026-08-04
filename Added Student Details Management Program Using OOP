@@ -1,0 +1,42 @@
+import java.util.*;
+ class Student{
+        String name;
+        int  age;
+        String DateOfBrith;
+        String gender;
+        String course;
+        
+        public void Getdata(){
+         Scanner hp= new Scanner(System.in);  
+         System.out.println("enter your name:");
+         name=hp.next();
+         System.out.println("enter your age:");
+         age=hp.nextInt();
+         System.out.println(" enter your DateOfBrith:");
+         DateOfBrith=hp.next();
+         System.out.println("enter your gender:");
+         gender=hp.next();
+         System.out.println("enter your course");
+         course=hp.next();
+        }
+        
+    
+    public void Display(){
+        System.out.println("your name is:"+name);
+        System.out.println("age is:"+age);
+        System.out.println("Date Of Brith:"+DateOfBrith);
+        System.out.println("gender:"+gender);
+        System.out.println("course is:"+course);
+        
+    }
+ }
+public class Main
+{
+	public static void main(String[] args) {
+		
+		Student tbx=new Student();
+		tbx.Getdata();
+		tbx.Display();
+		
+	}
+}
