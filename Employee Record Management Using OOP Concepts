@@ -1,0 +1,47 @@
+import java.util.*;
+ class Employee{
+        String name;
+        int  age;
+        String Department;
+        String location;
+        int salary;
+        /* here constructure is starting*/
+        Employee(){
+            System.out.println("this  is constructure working here");
+            System.out.println("here your detail enter");
+        }
+        
+        public void Getdata(){
+         Scanner hp= new Scanner(System.in);  
+         System.out.println("enter your name:");
+         name=hp.next();
+         System.out.println("enter your age:");
+         age=hp.nextInt();
+         System.out.println(" enter your Department:");
+         Department=hp.next();
+         System.out.println("enter your location:");
+         location=hp.next();
+         System.out.println("enter your salary");
+         salary=hp.nextInt();
+        }
+        
+    
+    public void Display(){
+        System.out.println("your name is:"+name);
+        System.out.println("age is:"+age);
+        System.out.println("Date Of Brith:"+Department);
+        System.out.println("location:"+location);
+        System.out.println("salary:"+salary);
+        
+    }
+ }
+public class Main
+{
+	public static void main(String[] args) {
+	/* constructure is Employee*/	
+		Employee tbx=new Employee();
+		tbx.Getdata();
+		tbx.Display();
+		
+	}
+}
