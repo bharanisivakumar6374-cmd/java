@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class Main
+{
+     static class Sample{
+    public int add(int a, int b )
+    {
+        return a+b;
+    }
+    public int add(int a, int b, int c )
+    {
+        return a+b+c;
+    }
+    public double add(double a, double b )
+    {
+        return a+b;
+    }
+}
+	public static void main(String[] args) {
+	    Sample tb=new Sample();
+	    System.out.println(tb.add(5,78));
+	    System.out.println(tb.add(5,78,789));
+	    System.out.println(tb.add(78.85,78156.5));
+	
+	}
+}
