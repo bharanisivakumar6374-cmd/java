@@ -44,7 +44,7 @@ public class Main
 	    Scanner hp=new Scanner(System.in);
 		Banking b1=new Banking();
 	    b1.setBalance(45000);
-	    System.out.println("welcome to our banking");
+	    System.out.println("welcome to our TrillionBytex banking");
 	    boolean exit=false;
 	    while(exit==false){
 	        System.out.println("________________________________________");
@@ -106,7 +106,7 @@ public class Main
 		    break;
 	    case 6:
 	        if(exit==true){
-	        System.out.println("thanks for choice our banking! always welcome you come back again");
+	        System.out.println("thanks for choice our TrillionBytex banking!  TrillionBytex always welcome you come back again");
 	        }
 	    default:
 	    System.out.println("invaild choice  enter");
