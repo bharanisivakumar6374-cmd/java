@@ -1,0 +1,7 @@
+class Main {
+    public static void main(String[] args) {
+        char ch = 'b';
+
+        System.out.println(Character.toUpperCase(ch));
+    }
+}
