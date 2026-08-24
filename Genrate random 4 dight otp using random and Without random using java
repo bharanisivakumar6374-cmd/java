@@ -1,0 +1,12 @@
+import java.util.Random;
+
+class OTP {
+    public static void main(String[] args) {
+
+        Random random = new Random();
+
+        int otp = 1000 + random.nextInt(9000);
+
+        System.out.println("Your OTP is: " + otp);
+    }
+}
