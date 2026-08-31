@@ -1,0 +1,59 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class NiceNameGame {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        Random random = new Random();
+
+        String[] questions = {
+            "What is your favorite color?",
+            "What is your favorite food?",
+            "What is your favorite game?",
+            "What is your dream job?",
+            "What is your favorite animal?",
+            "What is your favorite movie?",
+            "Which country do you want to visit?",
+            "What is your favorite programming language?",
+            "What makes you happy?",
+            "What is your biggest dream?"
+        };
+
+        System.out.println("🎮 WELCOME TO NICE NAME GAME!");
+        System.out.println("You will answer 5 random questions.\n");
+
+        for (int i = 1; i <= 5; i++) {
+
+            int question = random.nextInt(questions.length);
+
+            System.out.println("Question " + i + ": " + questions[question]);
+            System.out.print("Your answer: ");
+            String answer = sc.nextLine();
+
+            System.out.println("✅ Nice answer!\n");
+        }
+
+        String[] names = {
+            "Shadow King 👑",
+            "Cyber Ninja 🥷",
+            "Code Master 💻",
+            "Dream Warrior ⚔️",
+            "Tech Wizard 🧙",
+            "Smart Legend 🔥",
+            "Future Star ⭐",
+            "Java Hero ☕",
+            "Brain Boss 🧠",
+            "Mystery King 😎"
+        };
+
+        int name = random.nextInt(names.length);
+
+        System.out.println("==============================");
+        System.out.println("🎉 YOUR NICE NAME IS:");
+        System.out.println("🔥 " + names[name] + " 🔥");
+        System.out.println("==============================");
+
+        sc.close();
+    }
+}
