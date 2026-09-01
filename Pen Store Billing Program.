@@ -1,0 +1,76 @@
+import java.util.Scanner;
+
+public class PenStore {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String code;
+        double total = 0;
+
+        // Store pen details
+        String details = "";
+
+        System.out.println("===== PEN SELLING STORE =====");
+        System.out.println("Enter 0 to finish");
+
+        while (true) {
+
+            System.out.print("\nEnter Pen Barcode: ");
+            code = sc.nextLine().toUpperCase();
+
+            if (code.equals("0")) {
+                break;
+            }
+
+            String penName = "";
+            double price = 0;
+
+            // Barcode details
+            if (code.equals("PEG45")) {
+                penName = "Cello";
+                price = 10;
+            }
+            else if (code.equals("PEN20")) {
+                penName = "Parker";
+                price = 50;
+            }
+            else if (code.equals("PIL10")) {
+                penName = "Pilot";
+                price = 25;
+            }
+            else if (code.equals("REY15")) {
+                penName = "Reynolds";
+                price = 15;
+            }
+            else if (code.equals("CAM30")) {
+                penName = "Camlin";
+                price = 20;
+            }
+            else {
+                System.out.println("Invalid Barcode!");
+                continue;
+            }
+
+            // Add new pen details
+            details = details + "\nPen Code : " + code
+                    + "\nPen Name : " + penName
+                    + "\nPrice    : Rs." + price + "\n";
+
+            total = total + price;
+
+            // Display all added pens
+            System.out.println("\n===== ADDED PEN DETAILS =====");
+            System.out.println(details);
+            System.out.println("Total Amount : Rs." + total);
+        }
+
+        System.out.println("\n===== FINAL BILL =====");
+        System.out.println(details);
+        System.out.println("Total Amount : Rs." + total);
+        System.out.println("Thank You!");
+
+        sc.close();
+    }
+}
