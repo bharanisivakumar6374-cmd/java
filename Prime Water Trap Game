@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class PrimeWaterTrap {
+
+    static boolean isPrime(int n) {
+
+        if (n <= 1)
+            return false;
+
+        for (int i = 2; i <= n / 2; i++) {
+            if (n % i == 0)
+                return false;
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int trap = 1;
+
+        while (true) {
+
+            System.out.print("Enter number (0 to exit): ");
+            int num = sc.nextInt();
+
+            if (num == 0)
+                break;
+
+            if (isPrime(num)) {
+
+                System.out.println("Prime Number: " + num);
+                System.out.println(" Water Trap " + trap + " Activated");
+
+                trap++;
+            }
+            else {
+
+                System.out.println("Not Prime!");
+                
+                if (trap > 1) {
+                    trap--;
+                }
+
+                System.out.println("↩️ Return Back to Water Trap " + trap);
+            }
+        }
+
+        sc.close();
+    }
+}
