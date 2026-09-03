@@ -1,0 +1,99 @@
+import java.util.Scanner;
+
+class BusTicket {
+
+    String from = "Erode";
+    String to;
+    int fare;
+    int members;
+    int totalFare;
+
+    void bookTicket(String place, int count) {
+
+        to = place;
+        members = count;
+
+        if (place.equalsIgnoreCase("Mettur")) {
+            fare = 40;
+        }
+        else if (place.equalsIgnoreCase("Bhavani")) {
+            fare = 20;
+        }
+        else if (place.equalsIgnoreCase("Sankari")) {
+            fare = 30;
+        }
+        else if (place.equalsIgnoreCase("Salem")) {
+            fare = 50;
+        }
+        else if (place.equalsIgnoreCase("Perundurai")) {
+            fare = 15;
+        }
+        else if (place.equalsIgnoreCase("Chithode")) {
+            fare = 15;
+        }
+        else if (place.equalsIgnoreCase("Gobichettipalayam")) {
+            fare = 35;
+        }
+        else if (place.equalsIgnoreCase("Sathyamangalam")) {
+            fare = 50;
+        }
+        else if (place.equalsIgnoreCase("Tiruppur")) {
+            fare = 40;
+        }
+        else if (place.equalsIgnoreCase("Coimbatore")) {
+            fare = 60;
+        }
+        else if (place.equalsIgnoreCase("Namakkal")) {
+            fare = 55;
+        }
+        else if (place.equalsIgnoreCase("Karur")) {
+            fare = 60;
+        }
+        else {
+            fare = 0;
+        }
+
+        totalFare = fare * members;
+    }
+
+    void displayTicket() {
+
+        if (fare == 0) {
+            System.out.println("\nSorry! Bus route not available.");
+        }
+        else {
+            System.out.println("\n==========================");
+            System.out.println("       BUS TICKET");
+            System.out.println("==========================");
+            System.out.println("From          : " + from);
+            System.out.println("To            : " + to);
+            System.out.println("Members       : " + members);
+            System.out.println("Fare / Person : Rs." + fare);
+            System.out.println("Total Fare    : Rs." + totalFare);
+            System.out.println("==========================");
+            System.out.println("   Have a Safe Journey!");
+            System.out.println("==========================");
+        }
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        BusTicket ticket = new BusTicket();
+
+        System.out.print("Enter destination place: ");
+        String place = sc.nextLine();
+
+        System.out.print("Enter number of members: ");
+        int count = sc.nextInt();
+
+        ticket.bookTicket(place, count);
+        ticket.displayTicket();
+
+        sc.close();
+    }
+}
