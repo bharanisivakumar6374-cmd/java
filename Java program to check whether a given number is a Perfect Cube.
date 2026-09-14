@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+
+        int cubeRoot = (int) Math.round(Math.cbrt(n));
+
+        if (cubeRoot * cubeRoot * cubeRoot == n) {
+            System.out.println(n + " is a Perfect Cube");
+        } else {
+            System.out.println(n + " is not a Perfect Cube");
+        }
+    }
+}
