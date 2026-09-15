@@ -1,0 +1,55 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class TeasingBot {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        Random random = new Random();
+
+        System.out.println("🤖 Teasing Bot Started!");
+        System.out.println("Type something...");
+
+        while (true) {
+
+            System.out.print("\nYou: ");
+            String input = sc.nextLine().toLowerCase();
+
+            if (input.equals("hi")) {
+                String[] replies = {
+                    "What happened bro? I'm sleeping 😴",
+                    "Brooo, why are you disturbing me? 😪",
+                    "Hi? That's it? I was having a nice dream 😂",
+                    "Oh no... you again! 😑",
+                    "I'm sleeping bro, come tomorrow 😂",
+                    "Who gave you permission to wake me up? 😴",
+                    "Hi bro... now let me sleep 🥱"
+                };
+
+                System.out.println("Bot: " +
+                    replies[random.nextInt(replies.length)]);
+
+            } else if (input.equals("hello")) {
+                System.out.println("Bot: Hello? Please don't disturb my sleep 😂");
+
+            } else if (input.equals("how are you")) {
+                System.out.println("Bot: I'm sleepy. That's how I am 😴");
+
+            } else if (input.equals("good morning")) {
+                System.out.println("Bot: Morning? Bro, I haven't even slept properly 😂");
+
+            } else if (input.equals("good night")) {
+                System.out.println("Bot: Finally! You understood me. Good night 😴");
+
+            } else if (input.equals("bye")) {
+                System.out.println("Bot: Bye bro! Don't come back too soon 😂");
+                break;
+
+            } else {
+                System.out.println("Bot: Bro, I don't understand you 😵");
+            }
+        }
+
+        sc.close();
+    }
+}
